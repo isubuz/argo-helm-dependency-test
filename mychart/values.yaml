@@ -1,3 +1,3 @@
-# mysubchart:
-#   secretValue: >-
-#     {{ (lookup "v1" "Secret" "dev" "mysecret").data.value }}
+mysubchart:
+  secretValue: >-
+    {{ (lookup "v1" "Secret" "dev" "mysecret") }}
